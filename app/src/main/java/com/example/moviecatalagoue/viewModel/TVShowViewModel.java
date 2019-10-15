@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import cz.msebera.android.httpclient.Header;
 
 public class TVShowViewModel extends ViewModel {
-    private static final String API_KEY = "9f3468a4387e161c074e86e7ed72428d";
+    private static final String API_KEY = "170dce60838deb5e366de3fab43beb0b";
     private MutableLiveData<ArrayList<TVShow>> listTvShow = new MutableLiveData<>();
 
     public void setTvShow(final String tvShows) {

@@ -81,11 +81,10 @@ public class TVShowAdapter extends RecyclerView.Adapter<TVShowAdapter.TVShowView
         public void onClick(View v) {
             int position = getAdapterPosition();
             TVShow tvShow = tvData.get(position);
-//
             tvShow.setName(tvShow.getName());
             tvShow.setOverview(tvShow.getOverview());
 
-            Intent moveWithObjectIntent = new Intent(itemView.getContext(), TVShowDetailActivity.class);
+            Intent moveWithObjectIntent = new Intent(itemView.getContext(), TVShowDetailActivity.class); //pindah ke detail Tvshow
             moveWithObjectIntent.putExtra(TVShowDetailActivity.EXTRA_TV_SHOW, tvShow);
             itemView.getContext().startActivity(moveWithObjectIntent);
 

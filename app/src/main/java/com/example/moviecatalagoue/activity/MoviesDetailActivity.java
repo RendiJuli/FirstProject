@@ -39,7 +39,7 @@ public class MoviesDetailActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             public void run() {
                 try{
-                    Thread.sleep(5000);
+                    Thread.sleep(4000);
                 }
                 catch (Exception e) { }
 

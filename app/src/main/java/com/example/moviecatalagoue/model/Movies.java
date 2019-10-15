@@ -11,10 +11,11 @@ public class Movies implements Parcelable {
     private String title;
     private Double popularity;
     private String original_language;
-    private String overview;
-    private String release_date;
     private String photo;
     private String banner;
+    private String overview;
+    private String release_date;
+
 
     public String getBanner() {
         return banner;

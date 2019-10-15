@@ -25,13 +25,13 @@ public class TVShowDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tvshow_detail);
 
-        tvName = findViewById(R.id.tv_item_name);
+        tvName = findViewById(R.id.tv_item_title);
         tvVoteAverage = findViewById(R.id.tv_item_voteAverege);
         tvVoteCount = findViewById(R.id.tv_item_voteCount);
         tvOverview = findViewById(R.id.tv_item_overview);
         tvLanguage = findViewById(R.id.tv_item_language);
         imagePhoto = findViewById(R.id.img_item_photo);
-        progressBar = findViewById(R.id.progressBarShowDetail);
+        progressBar = findViewById(R.id.progressDetailTv);
 
         progressBar.setVisibility(View.VISIBLE);
 
@@ -40,7 +40,7 @@ public class TVShowDetailActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             public void run() {
                 try{
-                    Thread.sleep(5000);
+                    Thread.sleep(4000);
                 }
                 catch (Exception e) { }
 
